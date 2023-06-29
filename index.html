@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.freeiconspng.com/thumbs/planet-icon/planet-icon-png-28.png" type="image/x-icon">
+    <!-- libs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SaveSpace - Game</title>
+</head>
+<body>
+    <!-- loader -->
+    <div class="loader">
+        <div class="content">
+            <div class="planet">
+               <div class="ring"></div>
+                  <div class="cover-ring"></div>
+               <div class="spots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+         
+               </div>
+            </div>
+            <p>loading</p>
+         </div>
+    </div>
+
+
+    <div class="start-screen">
+        <div class="started-block start-game-btn">
+            <div class="st-div">
+                Start Game
+            </div>
+            <p>This means that you will start a new game and your achievements on this mode of game not saving. Also your score will not show on scoreboard.</p>
+        </div>
+        <div class="started-block log-in-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/889/889731.png" alt="">
+            Login
+            <p>Reggister new account, or login to your own. In this mode you can buy skins and compete with others for a place in the top.</p>
+        </div>
+    </div>
+
+    <div class="menu-interface">
+        <button class="play-btn">Play</button>
+    </div>
+
+    <div id="Enemy"></div>
+    <div id="Gamer"></div>
+    <div id="Bullets"></div>
+    <div class="text-in-game">
+        Score: 0
+    </div>
+    <div class="text-in-menu">
+        Balance: <p class="idk-54678">0</p><span>$</span>
+    </div>
+    <div class="settings-game">
+        <i class="fa-solid fa-gear"></i>
+    </div>
+
+    <div id="lose">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Game_Over_logo.png" alt="" srcset="" draggable="false">
+        <div class="info-game">
+            <div class="score-div" id="score-game">
+                <span>Score: </span> 0
+            </div>
+            <div class="money-rew-div" id="reward-game">
+                <span>Money Rewarded: </span> 0$
+            </div>
+
+            <div class="buttons-after-game">
+                <button class="back-menu">Back to menu</button>
+                <button class="more-play">Play Again</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="info-how-to-play">
+        <h2><span>H</span>ow to play?</h2>
+        <div class="info-how">
+            <div class="first-info">
+                <img src="img/mouse.png">
+                <p data-numb="1">Use your mouse to moving the spaceship</p>
+            </div>
+            <div class="sec-info">
+                <img src="https://help.mmhmm.app/hc/article_attachments/4418850679063/space_key.png">
+                <p data-numb="2">Use "space" on your keyboard to shoot</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="score-board">
+        <h2><span>S</span>coreboard:</h2>
+        <div class="people">
+            <div class="people-place">
+                <h4 class="nick-score" data-place="1">Artixx</h4>
+                <p class="people-score">280 056 <img src="img/cup1.png" alt="first-place"></p>
+            </div>
+
+            <div class="people-place">
+                <h4 class="nick-score" data-place="2">Drugger</h4>
+                <p class="people-score">123 418</p>
+            </div>
+
+            <div class="people-place">
+                <h4 class="nick-score" data-place="3">Jerry</h4>
+                <p class="people-score">114 650</p>
+            </div>
+
+            <div class="people-place">
+                <h4 class="nick-score" data-place="4">Prodam Pochky</h4>
+                <p class="people-score">105 924</p>
+            </div>
+
+            <div class="people-place">
+                <h4 class="nick-score" data-place="5">SpeedSucker</h4>
+                <p class="people-score">84 157</p>
+            </div>
+
+            <div class="people-place">
+                <h4 class="nick-score" data-place="6">Zero Two</h4>
+                <p class="people-score">66 976</p>
+            </div>
+
+            <div class="people-place">
+                <h4 class="nick-score" data-place="7">NoName Chill</h4>
+                <p class="people-score">39 989</p>
+            </div>
+            <div class="people-place">
+                <h4 class="nick-score" data-place="8">IDK Gaming</h4>
+                <p class="people-score">30 355</p>
+            </div>
+            <div class="people-place">
+                <h4 class="nick-score" data-place="9">XDXDXD</h4>
+                <p class="people-score">25 102</p>
+            </div>
+            <div class="people-place">
+                <h4 class="nick-score" data-place="10">EnJey</h4>
+                <p class="people-score">25 038</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-settings-block">
+        <div class="modal-settings">
+            <h2><span>S</span>ettings</h2>
+            <div class="settings-mode">
+                <div class="setting-block">
+                    <label class="label">
+                        <input type="checkbox" id="offMenuMusic">
+                        <svg viewBox="0 0 64 64" height="30px" width="30px">
+                          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                        </svg>
+                        <p>Turn off Menu music.</p>
+                    </label>
+                </div>
+
+                <div class="setting-block">
+                    <label class="label">
+                        <input type="checkbox" id="offGameMusic">
+                        <svg viewBox="0 0 64 64" height="30px" width="30px">
+                          <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                        </svg>
+                        <p>Turn off Game music.</p>
+                    </label>
+                </div>
+
+                      <div class="setting-block">
+                        <label class="label">
+                            <input type="checkbox" id="offEffects">
+                            <svg viewBox="0 0 64 64" height="30px" width="30px">
+                              <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                            </svg>
+                            <p>Turn off Effects sound.</p>
+                        </label>
+                      </div>
+
+                      <div class="setting-block volum-red">
+                        <div class="range">
+                            <p>Volume:</p>
+                            <div class="field">
+                                <input type="range" id="volume-setting" min="0" max="100" steps="1">
+                                <div class="value right">10</div>
+                            </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skin-settings-block">
+        <div class="show-change-skin-icon" id="ShowSkinChange" data-tooltip="choose skin">
+            <i class="fa-brands fa-unity"></i>
+        </div>
+        <div class="show-change-skin-icon" data-tooltip="upgrade bullets">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+        </div>
+        <div class="show-change-skin-icon" data-tooltip="3d rotate">
+            <i class="fa-solid fa-arrows-rotate"></i>
+        </div>
+        <div class="show-change-skin-icon" data-tooltip="change color of bullets">
+            <i class="fa-solid fa-palette"></i>
+        </div>
+    </div>
+
+    <div class="choose-skin-block">
+        <h2 class="title-choose"><span>S</span>kin Choose</h2>
+        <div class="slider">
+            <div class="first-skin-choose skin-block" id="Crusader">
+                <img src="img/prev-skin2.png" alt="" />
+                <h3>Crusader</h3>
+            </div>
+            <div class="second-skin-choose skin-block" id="redBee">
+                <img src="img/prev-skin1.png" alt="" />
+                <h3>Red Bee</h3>
+            </div>
+            <div class="third-skin-choose skin-block" id="Scarlet">
+                <img src="img/prev-skin3.png" alt="" />
+                <h3>Scarlet</h3>
+            </div>
+            <div class="fourth-skin-choose skin-block" id="Stripe">
+                <img src="img/prev-skin4.png" alt="" />
+                <h3>Stripe</h3>
+            </div>
+            <div class="fifth-skin-choose skin-block" id="Wipeout">
+                <img src="img/prev-skin4.png" alt="" />
+                <h3>Wipeout</h3>
+            </div>
+        </div>
+    </div>
+
+    <p class="version-b">Beta v1.0. By Artixx</p>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

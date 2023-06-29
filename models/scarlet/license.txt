@@ -1,0 +1,11 @@
+Model Information:
+* title:	MAX Delta DL Spaceship
+* source:	https://sketchfab.com/3d-models/max-delta-dl-spaceship-364b8b1821164c9c83c9102c235dc331
+* author:	Miru (https://sketchfab.com/miru302)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "MAX Delta DL Spaceship" (https://sketchfab.com/3d-models/max-delta-dl-spaceship-364b8b1821164c9c83c9102c235dc331) by Miru (https://sketchfab.com/miru302) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
